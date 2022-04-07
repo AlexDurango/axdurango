@@ -1,0 +1,20 @@
+.allProjects{
+    background-color: #1c1c1c;
+}
+.allProjects h1{
+    font-family: 'Grape Nuts', cursive;
+    color: white;
+    font-size: 48px;
+    margin: 50px 75px ;
+}
+
+.projectsCtn{
+    padding: 0px 75px 75px 75px;
+    display: grid;
+    grid-template: "project1 project2"
+                   "project3 project4"
+                   "project5 project6"
+                   "project7 project8";
+    gap: 30px;
+    grid-auto-rows: auto;
+}

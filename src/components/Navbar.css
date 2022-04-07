@@ -1,0 +1,57 @@
+.sidebar {
+    margin: 0;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    background-color: #808080;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.sidebar .brandIcon{
+    width: 64px;
+    height: 64px;
+}
+
+.sidebar .brandIcon:hover {
+    animation: logoAnimation;
+    animation-duration: 0.5s;
+}
+
+.sidebar .socialMediaIcon {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+
+@keyframes logoAnimation {
+    0% {
+        padding-bottom: 0;
+    }
+    50%{
+        margin-bottom: 50px;
+    }
+    100%{
+        margin-bottom: 0;
+    }
+}

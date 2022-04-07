@@ -1,0 +1,101 @@
+/* .mainTitle .mainTitleCtn{
+    grid-area: "mainTitle";
+    margin-top: 0;
+    margin-right: 0;
+    padding: 50px 0;
+
+    background: #a7a7a7;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+} */
+
+.mainTitle {
+    grid-area: "mainTitle";
+    margin-top: 0;
+    margin-right: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template: 1fr 1fr;
+}
+
+.mainTitle .mainTitleCtn{
+    grid-area: "brandName";
+    margin-top: 0;
+    margin-right: 0;
+    padding: 100px 0;
+
+    background: #a7a7a7;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+/* Less and greater than signs */
+.mainTitle .mainTitleCtn .brandName img{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    opacity: 0.5;
+}
+
+.mainTitle .mainTitleCtn .brandName h1 {
+    text-align: left;
+    font-family: 'Lobster', cursive;
+    font-size: 96px;
+}
+
+.mainTitle .mainTitleCtn .brandName h2{
+    text-align: center;
+    font-size: 96px;
+    font-family: 'Grape Nuts', cursive;
+}
+
+.mainTitle .mainTitleCtn .brandName h4{
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* HANDDETECTOR IMG */
+
+.mainTitle .mainTitleCtn .handDetectorCtn {
+    grid-area: "handDetectorCtn";
+}
+
+.mainTitle .mainTitleCtn .handDetectorImg {
+    
+    padding: 30px;
+    background-color: black;
+    margin-bottom: 0;
+
+    border-radius: 10%;
+}
+
+.mainTitle .mainTitleCtn .handDetectorCtn .handDetectorDesc {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 720px) {
+    .mainTitle .mainTitleCtn{ 
+        grid-template: "brandName"
+                       "handDetectorCtn";
+    }
+    .mainTitle .mainTitleCtn{
+        grid-area: "brandName";
+    }
+    .mainTitle .mainTitleCtn .handDetectorCtn {
+        grid-area: "handDetectorCtn";
+    }
+
+}

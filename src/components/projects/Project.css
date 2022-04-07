@@ -1,0 +1,25 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body p{
+    margin: 25px auto;
+}
+
+.card-body a{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.list-group{
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+}
+
+.card-body .date{
+    margin-left: 0;
+}

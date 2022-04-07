@@ -1,0 +1,14 @@
+#aboutMe .container{
+    margin: 75px 0;
+}
+
+.card .card-body .aboutMeTitle {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 48px;
+}
+
+.card .card-body .aboutMeTitle img{
+    width: 96px;
+    height: 96px;
+    margin: 0 25px;
+}
